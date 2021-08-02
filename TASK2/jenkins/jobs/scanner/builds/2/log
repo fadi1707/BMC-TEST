@@ -1,0 +1,7 @@
+Started by user [8mha:////4I7NzOmqOmATlH794fsvW/OZCeWgE0UzGWpQ0r0zt5dKAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYu/dLi1CL9tMSUTAAsEyK0vwAAAA==[0mFadi Salameh
+Running as SYSTEM
+Building on master in workspace /var/jenkins_home/workspace/scanner
+[scanner] $ /bin/bash /tmp/jenkins230833239900175406.sh
+ssh: Could not resolve hostname : Name or service not known
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

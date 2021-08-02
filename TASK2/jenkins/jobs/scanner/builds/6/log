@@ -1,0 +1,21 @@
+Started by user [8mha:////4I7NzOmqOmATlH794fsvW/OZCeWgE0UzGWpQ0r0zt5dKAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYu/dLi1CL9tMSUTAAsEyK0vwAAAA==[0mFadi Salameh
+Running as SYSTEM
+Building on master in workspace /var/jenkins_home/workspace/scanner
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-3yaCWc7QEtjf/agent.1335
+SSH_AGENT_PID=1338
+[ssh-agent] Started.
+Running ssh-add (command line suppressed)
+Identity added: /var/jenkins_home/workspace/scanner@tmp/private_key_2793389393881393296.key (fadi@UbuOS)
+[ssh-agent] Using credentials root
+[scanner] $ /bin/bash /tmp/jenkins6110777171833327047.sh
+Host key verification failed.
+Build step 'Execute shell' marked build as failure
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 1338 killed;
+[ssh-agent] Stopped.
+Finished: FAILURE

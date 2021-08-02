@@ -1,0 +1,15 @@
+Inbound agent connected from 172.24.0.1/172.24.0.1:43654
+Remoting version: 4.6
+This is a Unix agent
+onOnline: class org.jenkinsci.modules.slave_installer.impl.ComputerListenerImpl reported an exception: java.io.IOException: Remote call on JNLP4-connect connection from 172.24.0.1/172.24.0.1:43654 failed
+Agent successfully connected and online
+ERROR: Connection terminated
+java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:142)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:794)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

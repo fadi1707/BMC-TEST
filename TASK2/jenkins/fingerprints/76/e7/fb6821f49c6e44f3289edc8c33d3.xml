@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-08-02 13:27:17.83 UTC</timestamp>
+  <md5sum>76e7fb6821f49c6e44f3289edc8c33d3</md5sum>
+  <fileName>Credential id=srvBMC name=srvBMC</fileName>
+  <usages>
+    <entry>
+      <string>scanner</string>
+      <ranges>5-8</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

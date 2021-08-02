@@ -1,0 +1,58 @@
+version: '3.7'
+services:
+    jenkins:
+        image: jenkins/jenkins:2.277
+        #build: ./jenkins_container
+        privileged: true
+        user: jenkins #$HOST_UID #root
+        ports:
+          - 8080:8080
+          - 50000:50000
+          - "10000:22"
+        container_name: ${JENKINS_CONTAINER}
+        #command: ["/bin/sh -c 'apt-get update -y ; apt-get install sudo openssh-server systemd openssh-client -y'"]
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+          - /usr/bin/docker:/usr/local/bin/docker
+          - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose
+          - ./${JENKINS_HOME}:/var/jenkins_home
+          - m2repo:/root/.m2/repository
+          - /home/fadi/.ssh:/home/jenkins/.ssh
+        networks:
+          - network 
+#    
+#    proxy:
+#        #image: nginx
+#        build: ./nginx
+#        container_name: mynginx
+#        privileged: true
+#        #user: nginx
+#        ports: 
+#          - 80:80
+#          - "20000:22"
+#        volumes:
+#          - /home/fadi/.ssh:/home/nginx/.ssh
+#          - ./nginx/var:/var/cache/nginx/
+#        networks:
+#          - network
+#        #entrypoint: "/bin/sh -c 'echo $USER'"
+#    
+#    test-srv:
+#        build: ./centos_srv
+#        container_name: testsrv
+#        privileged: true
+#        ports:
+#          - "9090:22"
+#        volumes:
+#          - /home/fadi/.ssh:/root/.ssh
+#        networks:
+#          - network
+#        entrypoint: "/bin/sh -c '//data/passCH.sh; echo test; echo test'"
+
+volumes: 
+    m2repo:
+    .ssh:
+networks: 
+    network:
+        external: 
+            name: bmc-net 

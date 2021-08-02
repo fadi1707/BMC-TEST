@@ -1,0 +1,40 @@
+Started by user [8mha:////4I7NzOmqOmATlH794fsvW/OZCeWgE0UzGWpQ0r0zt5dKAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYu/dLi1CL9tMSUTAAsEyK0vwAAAA==[0mFadi Salameh
+Running as SYSTEM
+Building on master in workspace /var/jenkins_home/workspace/scanner
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-VxY4BzYt9Odn/agent.1380
+SSH_AGENT_PID=1383
+[ssh-agent] Started.
+Running ssh-add (command line suppressed)
+Identity added: /var/jenkins_home/workspace/scanner@tmp/private_key_5923634191428037470.key (fadi@UbuOS)
+[ssh-agent] Using credentials root
+[scanner] $ /bin/bash /tmp/jenkins8225745504880201457.sh
+ls: cannot access anaconda-post.log: No such file or directory
+ls: cannot access bin: No such file or directory
+ls: cannot access data: No such file or directory
+ls: cannot access dev: No such file or directory
+ls: cannot access etc: No such file or directory
+ls: cannot access home: No such file or directory
+ls: cannot access lib: No such file or directory
+ls: cannot access lib64: No such file or directory
+ls: cannot access media: No such file or directory
+ls: cannot access mnt: No such file or directory
+ls: cannot access opt: No such file or directory
+ls: cannot access proc: No such file or directory
+ls: cannot access root: No such file or directory
+ls: cannot access run: No such file or directory
+ls: cannot access sbin: No such file or directory
+ls: cannot access srv: No such file or directory
+ls: cannot access sys: No such file or directory
+ls: cannot access tmp: No such file or directory
+ls: cannot access usr: No such file or directory
+ls: cannot access var: No such file or directory
+Build step 'Execute shell' marked build as failure
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 1383 killed;
+[ssh-agent] Stopped.
+Finished: FAILURE

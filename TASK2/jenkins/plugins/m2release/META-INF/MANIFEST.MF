@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jnord
+Build-Jdk: 1.8.0_162
+Extension-Name: m2release
+Specification-Title: A plug-in that enables you to perform releases us
+ ing the maven-release-plugin from Jenkins.
+Implementation-Title: m2release
+Implementation-Version: 0.16.2
+Plugin-Class: org.jvnet.hudson.plugins.m2release.PluginImpl
+Group-Id: org.jenkins-ci.plugins.m2release
+Short-Name: m2release
+Long-Name: Jenkins Maven Release Plug-in Plug-in
+Url: http://wiki.jenkins-ci.org/display/JENKINS/M2+Release+Plugin
+Compatible-Since-Version: 0.15
+Minimum-Java-Version: 1.8
+Plugin-Version: 0.16.2
+Hudson-Version: 2.138.4
+Jenkins-Version: 2.138.4
+Plugin-Dependencies: maven-plugin:3.4,dashboard-view:2.0;resolution:=o
+ ptional
+Plugin-Developers: James Nord:teilo:,Christian Slama:m68k:,Dominik Bar
+ tholdi:imod:
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://www.opensource.org/licenses/mit-license.php
+Plugin-ScmUrl: https://github.com/jenkinsci/m2release-plugin/
+

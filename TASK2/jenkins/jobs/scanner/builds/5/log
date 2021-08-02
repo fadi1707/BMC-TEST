@@ -1,0 +1,39 @@
+Started by user [8mha:////4I7NzOmqOmATlH794fsvW/OZCeWgE0UzGWpQ0r0zt5dKAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYu/dLi1CL9tMSUTAAsEyK0vwAAAA==[0mFadi Salameh
+Running as SYSTEM
+Building on master in workspace /var/jenkins_home/workspace/scanner
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-hneFlifQBsUi/agent.1310
+SSH_AGENT_PID=1313
+[ssh-agent] Started.
+Running ssh-add (command line suppressed)
+Identity added: /var/jenkins_home/workspace/scanner@tmp/private_key_1513214363843802758.key (fadi@UbuOS)
+[ssh-agent] Using credentials root
+[scanner] $ /bin/bash /tmp/jenkins6844571485770615008.sh
+anaconda-post.log
+bin
+data
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 1313 killed;
+[ssh-agent] Stopped.
+Finished: SUCCESS
