@@ -2,7 +2,7 @@ FROM python:3.6-alpine
 
 WORKDIR /app
 
-copy dir_scanner.py .
+COPY dir_scanner.py .
 
 VOLUME ["/output"]
 

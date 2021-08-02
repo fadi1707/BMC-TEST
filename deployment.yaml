@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dir-scanner
+
+spec:
+  containers:
+    - name: dir-scanner
+      image: fadi1707/my-repo:scanner
+      ports:
+        - containerPort: 8081
+      volumeMounts:
+        - name: varlog
+          mountPath: /var/log
+  volumes:
+    - name: varlog
+      emptyDir: {}
